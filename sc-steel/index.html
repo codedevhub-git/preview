@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>SC Steel & Concrete Professionals | Shreveport Concrete & Foundation Contractor</title>
+<meta name="description" content="Driveways, slabs, retaining walls, drainage and foundation repair in Shreveport, Bossier City, Stonewall and Keithville. Free estimates.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#c8102e; --red-dark:#9b0c23; --ink:#141414; --ink-2:#2a2a2a; --paper:#f4f2ef; --stone:#e4e0da; --muted:#6b6660; --white:#fff;
+  --radius:14px; --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Archivo,Inter,sans-serif;line-height:1.08;letter-spacing:-.01em}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+/* preview ribbon */
+.ribbon{background:#111;color:#ddd;font-size:13px;text-align:center;padding:8px 16px}
+.ribbon b{color:#fff}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(20,20,20,.96);backdrop-filter:blur(8px);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-mark{width:42px;height:42px;border-radius:50%;background:#fff;display:grid;place-items:center;font:900 17px Archivo;color:var(--red);border:3px solid var(--red)}
+.logo-text{font:700 15px/1.1 Archivo}
+.logo-text small{display:block;font:500 11px Inter;color:#bbb;letter-spacing:.08em;text-transform:uppercase}
+.nav-links{display:flex;gap:26px;font-size:14px;font-weight:500}
+.nav-links a{text-decoration:none;color:#ddd}
+.nav-links a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:#fff;text-decoration:none;font-weight:600;font-size:15px;padding:13px 22px;border-radius:999px;border:0;cursor:pointer;transition:background .15s}
+.btn:hover{background:var(--red-dark)}
+.btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.5)}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+@media (max-width:860px){.nav-links{display:none}.nav .btn{padding:10px 16px;font-size:14px}}
+
+/* hero */
+.hero{position:relative;color:#fff;overflow:hidden;
+  background:
+   radial-gradient(1200px 500px at 80% -10%,rgba(200,16,46,.35),transparent 60%),
+   linear-gradient(160deg,#1d1d1d 0%,#2b2a28 55%,#3a3733 100%)}
+.hero::before{content:"";position:absolute;inset:0;opacity:.18;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.9'/%3E%3C/svg%3E")}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;padding:84px 0 96px;align-items:center}
+.eyebrow{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#ffb3bf;margin-bottom:18px}
+.hero h1{font-size:clamp(38px,6vw,66px);font-weight:900}
+.hero h1 em{font-style:normal;color:var(--red);background:#fff;padding:0 .18em;border-radius:6px}
+.hero p.lead{font-size:clamp(17px,2vw,19px);color:#d8d4ce;max-width:560px;margin:22px 0 32px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
+.trust{display:flex;flex-wrap:wrap;gap:22px;margin-top:36px;font-size:14px;color:#cfcac3}
+.trust span{display:flex;align-items:center;gap:8px}
+.trust svg{width:18px;height:18px;color:#ff8597}
+
+/* estimate card */
+.card{background:#fff;color:var(--ink);border-radius:var(--radius);padding:28px;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.card h3{font-size:22px;margin-bottom:4px}
+.card p{font-size:14px;color:var(--muted);margin-bottom:18px}
+form label{display:block;font-size:13px;font-weight:600;margin:12px 0 6px}
+form input,form select,form textarea{width:100%;font:inherit;font-size:15px;padding:12px 14px;border:1.5px solid var(--stone);border-radius:10px;background:#faf9f7}
+form input:focus,form select:focus,form textarea:focus{outline:none;border-color:var(--red)}
+form .btn{width:100%;justify-content:center;margin-top:18px}
+.form-note{font-size:12px;color:var(--muted);text-align:center;margin-top:10px}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr;padding:56px 0 64px}}
+
+/* sections */
+section{padding:88px 0}
+.sec-head{max-width:680px;margin-bottom:44px}
+.sec-head .eyebrow{color:var(--red)}
+.sec-head h2{font-size:clamp(30px,4vw,44px);font-weight:900}
+.sec-head p{color:var(--muted);font-size:17px;margin-top:12px}
+
+/* problems */
+.problems{background:var(--ink);color:#fff}
+.problems .sec-head p{color:#b9b4ad}
+.prob-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.prob{background:var(--ink-2);border:1px solid #3a3a3a;border-radius:var(--radius);padding:24px}
+.prob .q{font:700 19px/1.25 Archivo;margin-bottom:10px}
+.prob .a{font-size:14px;color:#c7c2bb}
+.prob .tag{display:inline-block;margin-top:14px;font-size:12px;font-weight:600;color:#ff8597}
+@media (max-width:980px){.prob-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.prob-grid{grid-template-columns:1fr}}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.svc{background:#fff;border-radius:var(--radius);padding:28px;border:1px solid var(--stone);transition:transform .15s,box-shadow .15s}
+.svc:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(0,0,0,.08)}
+.svc .ic{width:48px;height:48px;border-radius:12px;background:#fbe7ea;color:var(--red);display:grid;place-items:center;margin-bottom:16px}
+.svc .ic svg{width:26px;height:26px}
+.svc h3{font-size:20px;margin-bottom:8px}
+.svc p{font-size:15px;color:var(--muted)}
+@media (max-width:900px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.svc-grid{grid-template-columns:1fr}}
+
+/* video */
+.video{background:var(--stone)}
+.video-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.phone{justify-self:center;width:280px;aspect-ratio:9/16;border-radius:34px;background:#111;border:10px solid #111;box-shadow:0 30px 60px rgba(0,0,0,.25);position:relative;overflow:hidden;
+  background:linear-gradient(180deg,#5a5650,#2a2826)}
+.phone .play{position:absolute;inset:0;display:grid;place-items:center}
+.phone .play div{width:74px;height:74px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center}
+.phone .cap{position:absolute;left:14px;right:14px;bottom:18px;color:#fff;font:700 18px/1.2 Archivo;text-shadow:0 2px 8px rgba(0,0,0,.6)}
+.video ul{list-style:none;margin-top:22px}
+.video li{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #d3cec6;font-weight:500}
+.video li::before{content:"▶";color:var(--red);font-size:12px;margin-top:4px}
+@media (max-width:860px){.video-grid{grid-template-columns:1fr}}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.step{background:#fff;border-radius:var(--radius);padding:26px;border:1px solid var(--stone)}
+.step::before{counter-increment:s;content:"0" counter(s);font:900 34px Archivo;color:var(--red);display:block;margin-bottom:8px}
+.step h3{font-size:18px;margin-bottom:6px}
+.step p{font-size:14px;color:var(--muted)}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* reviews placeholder */
+.reviews{background:#fff}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rev{border:1.5px dashed #cfc9c1;border-radius:var(--radius);padding:24px;background:var(--paper)}
+.rev .stars{color:#e0a400;letter-spacing:2px;margin-bottom:10px}
+.rev p{color:var(--muted);font-size:15px}
+@media (max-width:860px){.rev-grid{grid-template-columns:1fr}}
+
+/* area */
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{background:#fff;border:1px solid var(--stone);border-radius:999px;padding:10px 18px;font-weight:600;font-size:15px}
+.map{aspect-ratio:4/3;border-radius:var(--radius);background:
+  radial-gradient(circle at 48% 46%,var(--red) 0 7px,rgba(200,16,46,.25) 8px 60px,transparent 61px),
+  repeating-linear-gradient(0deg,#e9e5df 0 1px,transparent 1px 38px),
+  repeating-linear-gradient(90deg,#e9e5df 0 1px,transparent 1px 38px),#f7f5f2;border:1px solid var(--stone);position:relative}
+.map b{position:absolute;left:52%;top:40%;font:700 14px Archivo;background:#fff;padding:4px 10px;border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,.1)}
+@media (max-width:860px){.area-grid{grid-template-columns:1fr}}
+
+/* cta */
+.cta{background:var(--red);color:#fff;text-align:center}
+.cta h2{font-size:clamp(30px,4.5vw,48px);font-weight:900}
+.cta p{font-size:18px;color:#ffd9df;margin:14px auto 30px;max-width:560px}
+.cta .btn{background:#fff;color:var(--red)}
+.cta .btn:hover{background:#ffe9ec}
+
+footer{background:#0f0f0f;color:#aaa;font-size:14px;padding:40px 0}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+footer b{color:#fff}
+
+/* mobile sticky call bar */
+.callbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:30;background:#111;padding:10px 12px;gap:10px}
+.callbar a{flex:1;justify-content:center}
+@media (max-width:700px){.callbar{display:flex}body{padding-bottom:70px}}
+</style>
+</head>
+<body>
+
+<div class="ribbon"><b>Free preview</b> designed for SC Steel &amp; Concrete Professionals by <a href="https://www.codedevhub.com" style="color:#fff;font-weight:700">CodeDevHub</a> · Not live yet · Like it? Call or text <a href="sms:+18032097750" style="color:#fff;font-weight:700">(803) 209-7750</a></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <span class="logo-mark">SC</span>
+      <span class="logo-text">SC Steel &amp; Concrete<small>Professionals</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#problems">Problems We Fix</a>
+      <a href="#services">Services</a>
+      <a href="#work">Watch Us Work</a>
+      <a href="#area">Service Area</a>
+    </nav>
+    <a class="btn" href="#estimate">Free Estimate</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Shreveport · Bossier City · Stonewall</span>
+      <h1>Concrete &amp; foundations done <em>right</em>, from the base up.</h1>
+      <p class="lead">Driveways, slabs, retaining walls, drainage fixes and foundation repair for homeowners and businesses across Northwest Louisiana. We show you the problem, explain the fix, and build it to last.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="#estimate">Get a Free Estimate
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        <a class="btn ghost" href="tel:+1">Call Now</a>
+      </div>
+      <div class="trust">
+        <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9L22 9.6l-5.5 4.8L18.2 22 12 18.1 5.8 22l1.7-7.6L2 9.6l7.1-.7z"/></svg>5-star rated</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Free on-site estimates</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2v20M2 12h20"/></svg>Residential &amp; commercial</span>
+      </div>
+    </div>
+
+    <div class="card" id="estimate">
+      <h3>Request a free estimate</h3>
+      <p>Tell us what's going on. We usually reply the same day.</p>
+      <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Preview only: this will send to your phone & email';">
+        <label for="n">Name</label>
+        <input id="n" placeholder="Your name">
+        <label for="p">Phone</label>
+        <input id="p" type="tel" placeholder="(318) 000-0000">
+        <label for="s">What do you need?</label>
+        <select id="s">
+          <option>Driveway or slab</option>
+          <option>Foundation repair / house leveling</option>
+          <option>Retaining wall</option>
+          <option>Drainage / standing water</option>
+          <option>Concrete overlay or resurfacing</option>
+          <option>Something else</option>
+        </select>
+        <label for="m">Details (optional)</label>
+        <textarea id="m" rows="3" placeholder="Address, size, photos you can text us…"></textarea>
+        <button class="btn" type="submit">Send My Request</button>
+        <div class="form-note">No obligation. We'll never share your info.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="problems" id="problems">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Sound familiar?</span>
+      <h2>The problems we fix every week.</h2>
+      <p>Most concrete problems start below the surface. We find the cause, not just the crack.</p>
+    </div>
+    <div class="prob-grid">
+      <div class="prob"><div class="q">Water won't drain off your patio?</div><div class="a">Wrong slope or no drainage plan. We regrade, add drains, or replace the slab so water goes where it should.</div><span class="tag">Drainage →</span></div>
+      <div class="prob"><div class="q">Retaining wall leaning or falling apart?</div><div class="a">Usually poor base, no drainage behind the wall, or not enough steel. We rebuild it the right way.</div><span class="tag">Retaining walls →</span></div>
+      <div class="prob"><div class="q">Cracks that keep getting bigger?</div><div class="a">Concrete shouldn't do that. We check the base and the soil before we pour again, so it doesn't come back.</div><span class="tag">Repairs →</span></div>
+      <div class="prob"><div class="q">House settling or doors sticking?</div><div class="a">Signs of foundation movement. We assess it, lift and level, and stop it from getting worse.</div><span class="tag">Foundations →</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What we do</span>
+      <h2>Concrete, steel and foundation work under one crew.</h2>
+    </div>
+    <div class="svc-grid">
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 20h18M5 20l3-14h8l3 14M9 10h6"/></svg></div><h3>Driveways</h3><p>New driveways, extensions and replacements, poured on a proper base so they last for decades.</p></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="10" rx="1"/><path d="M3 12h18"/></svg></div><h3>Slabs &amp; Patios</h3><p>Shop slabs, patios, sidewalks and pads, formed, reinforced and finished clean.</p></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M6 21V10l6-5 6 5v11M10 21v-5h4v5"/></svg></div><h3>Foundation Repair</h3><p>House lifts, leveling and foundation repairs for homes that are settling or shifting.</p></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 20h18M4 20v-4h16v4M5 16v-4h14v4M6 12V8h12v4"/></svg></div><h3>Retaining Walls</h3><p>Block and concrete walls with real drainage and footing, built to hold back the hill.</p></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3s6 7 6 11a6 6 0 01-12 0c0-4 6-11 6-11z"/></svg></div><h3>Drainage Solutions</h3><p>Standing water, runoff and erosion fixed with grading, drains and the right slope.</p></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg></div><h3>Overlays &amp; Decorative</h3><p>Resurface tired porches and patios, including wood-look concrete that never rots.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="video" id="work">
+  <div class="wrap video-grid">
+    <div class="phone"><div class="play"><div><svg width="28" height="28" viewBox="0 0 24 24" fill="#c8102e"><path d="M8 5v14l11-7z"/></svg></div></div><div class="cap">Is your retaining wall leaning?</div></div>
+    <div>
+      <div class="sec-head" style="margin-bottom:0">
+        <span class="eyebrow">Watch us work</span>
+        <h2>See the job before you hire us.</h2>
+        <p>We film our projects so you can see exactly how we work. Your TikTok videos play right here, so visitors from Google see what your followers already see.</p>
+      </div>
+      <ul>
+        <li>Water won't drain off your patio</li>
+        <li>What goes into building a retaining wall</li>
+        <li>2nd-story concrete repair, downtown Shreveport</li>
+        <li>Looks like wood, but it's concrete</li>
+        <li>This house is getting a lift</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">How it works</span><h2>Simple, straight answers.</h2></div>
+    <div class="steps">
+      <div class="step"><h3>Call or send a request</h3><p>Tell us what's going on. Photos help.</p></div>
+      <div class="step"><h3>On-site look</h3><p>We come out, find the cause and measure.</p></div>
+      <div class="step"><h3>Clear written price</h3><p>You get the scope and the price before any work starts.</p></div>
+      <div class="step"><h3>Built to last</h3><p>Proper base, proper steel, clean finish, and we clean up.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Customer reviews</span><h2>What Shreveport says about us.</h2><p>Your real Google and BBB reviews show up here automatically.</p></div>
+    <div class="rev-grid">
+      <div class="rev"><div class="stars">★★★★★</div><p>Your customer review goes here.</p></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>Your customer review goes here.</p></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>Your customer review goes here.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="area">
+  <div class="wrap area-grid">
+    <div>
+      <div class="sec-head" style="margin-bottom:24px"><span class="eyebrow">Service area</span><h2>Proudly serving Northwest Louisiana.</h2></div>
+      <div class="chips"><span>Shreveport</span><span>Bossier City</span><span>Stonewall</span><span>Keithville</span><span>Greenwood</span><span>Benton</span><span>Haughton</span><span>Surrounding areas</span></div>
+    </div>
+    <div class="map"><b>Shreveport, LA</b></div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Got a concrete problem? Let's take a look.</h2>
+    <p>Free estimates across Shreveport, Bossier City and surrounding areas.</p>
+    <a class="btn" href="#estimate">Get My Free Estimate</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><b>SC Steel &amp; Concrete Professionals</b><br>Shreveport Concrete + Foundation Contractor<br>Driveways · Slabs · Foundation Repairs</div>
+    <div>Shreveport, LA<br>Mon–Sat · Free estimates</div>
+    <div>Website preview by <b>CodeDevHub</b></div>
+  </div>
+</footer>
+
+<div class="callbar"><a class="btn" href="tel:+1">Call</a><a class="btn ghost" href="#estimate">Free Estimate</a></div>
+</body>
+</html>
